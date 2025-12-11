@@ -1,0 +1,9 @@
+{
+  "products": "Products",
+  "favorites": "Favorites",
+  "cart": "Cart",
+  "login": "Login",
+  "signup": "Sign up",
+  "profile": "Profile",
+  "logout": "Logout"
+}
