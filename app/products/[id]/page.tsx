@@ -35,7 +35,7 @@ export default function ProductDetail() {
 return (
   <div className="max-w-4xl mx-auto p-6">
     <div className="bg-white rounded-lg shadow-md p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* Imagen */}
+
       <div className="md:col-span-1 flex items-center justify-center">
         <div className="w-full max-w-xs h-56 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden border">
           <img
@@ -46,7 +46,7 @@ return (
         </div>
       </div>
 
-      {/* Detalles */}
+
       <div className="md:col-span-2 flex flex-col gap-4">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{product.title}</h2>
@@ -63,7 +63,7 @@ return (
         </div>
 
         <div className="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-          {/* Favorito */}
+
           <button
             onClick={() => toggleFavorite(product)}
             className={`flex-0 inline-flex items-center gap-2 px-4 py-2 rounded-lg border transition ${
@@ -75,7 +75,7 @@ return (
             {isFavorite ? "❤️ Favorito" : "🤍 Favorito"}
           </button>
 
-          {/* Carrito - si está en carrito, mostrar quitar */}
+
           {isInCart ? (
             <button
               onClick={() => removeFromCart(product.id)}
@@ -93,7 +93,6 @@ return (
           )}
         </div>
 
-        {/* Meta / acciones secundarias */}
         <div className="mt-4 text-sm text-gray-500">
           <span className="inline-block mr-4">Stock: <strong>Disponible</strong></span>
           <span>SKU: <strong>{product.id}</strong></span>
